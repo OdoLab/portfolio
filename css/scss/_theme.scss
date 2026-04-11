@@ -1,0 +1,14 @@
+:root {
+  --bg: white;
+  --text: rgb(29, 29, 29);
+  --text2: rgb(66, 66, 66);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #181717;
+    --text: rgb(230, 227, 227);
+    --text2: rgb(105, 105, 100);
+  }
+}
+

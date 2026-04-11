@@ -1,0 +1,117 @@
+#project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20vh 0;
+
+    & > p {
+        width: 60%;
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 8vh;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.6%;
+        width: 100%
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+
+        width: 25%;
+        height: 35vw;
+        background-color: var(--bg);
+        border: 0.1rem solid var(--text2);
+        border-radius: 5%;
+
+        img {
+            width: 80%;
+            margin: 8%;
+            margin-bottom: 5%;
+            border-radius: 5%;
+            align-self: center;
+        }
+
+        h3 {
+            margin-left: 9%;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            width: 80%;
+            text-align: left;
+            margin-left: 9%;
+
+            flex: 1;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: flex-start;
+            align-content: flex-start;
+            gap: 0.2rem;
+
+            width: 80%;
+            margin: 1.5rem 9%;
+
+            span {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                height: 1.75rem;
+                padding: 0.75rem;
+
+                font-weight: bold;
+                background-color: #a855f733;
+                border: 0.1rem solid #a855f74d;
+                border-radius: 5%;
+                font-size: small;
+            }
+        }
+
+        .more {
+            display: grid;;
+            grid-template-columns: 3fr 1fr;
+            width: 80%;
+            margin-left: 9%;
+            margin-bottom: 8%;
+            height: 2.25rem;
+
+            button {
+                background: transparent;
+                border: none;
+                padding: 0;
+                font: inherit;
+                color: rgb(192 132 252);
+                font-weight: bold;
+
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            a {
+                color: rgb(192 132 252);
+                text-decoration: none;
+                background-color: #a855f733;
+                border: 1px solid #e5e7eb;
+                border-radius: 5%;
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

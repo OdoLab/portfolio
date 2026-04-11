@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  position: fixed;
+  height: 11vh;
+  width: 100%;
+  background-color: var(--bg);
+  border-bottom: 0.1rem solid var(--text2);
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr 1.5fr 1fr;
+}
+nav .navTitle {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 1rem;
+  height: 11vh;
+}
+nav .navTitle img {
+  height: 90%;
+}
+nav a {
+  place-self: center;
+  text-decoration: none;
+  color: var(--text);
+  font-size: large;
+  font-weight: bold;
+}
+
+main {
+  padding-top: 11vh; /* matches your navbar height */
+}
+
+section {
+  scroll-margin-top: 11vh;
+  width: 100%;
+  min-height: 89vh;
+  background-color: var(--bg);
+  color: var(--text);
+  border-bottom: 0.1rem solid var(--text2);
+}
+
+p {
+  color: var(--text2);
+}
+
+:root {
+  --bg: white;
+  --text: rgb(29, 29, 29);
+  --text2: rgb(66, 66, 66);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #181717;
+    --text: rgb(230, 227, 227);
+    --text2: rgb(105, 105, 100);
+  }
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20%;
+}
+#about h2 {
+  color: #8a8a8a;
+}
+
+#project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20vh 0;
+}
+#project > p {
+  width: 60%;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
+#project .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6%;
+  width: 100%;
+}
+#project article {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 35vw;
+  background-color: var(--bg);
+  border: 0.1rem solid var(--text2);
+  border-radius: 5%;
+}
+#project article img {
+  width: 80%;
+  margin: 8%;
+  margin-bottom: 5%;
+  border-radius: 5%;
+  align-self: center;
+}
+#project article h3 {
+  margin-left: 9%;
+}
+#project article p {
+  margin-top: 0.5rem;
+  width: 80%;
+  text-align: left;
+  margin-left: 9%;
+  flex: 1;
+}
+#project article .tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 0.2rem;
+  width: 80%;
+  margin: 1.5rem 9%;
+}
+#project article .tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.75rem;
+  padding: 0.75rem;
+  font-weight: bold;
+  background-color: rgba(168, 85, 247, 0.2);
+  border: 0.1rem solid rgba(168, 85, 247, 0.3019607843);
+  border-radius: 5%;
+  font-size: small;
+}
+#project article .more {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 80%;
+  margin-left: 9%;
+  margin-bottom: 8%;
+  height: 2.25rem;
+}
+#project article .more button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: rgb(192, 132, 252);
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#project article .more a {
+  color: rgb(192, 132, 252);
+  text-decoration: none;
+  background-color: rgba(168, 85, 247, 0.2);
+  border: 1px solid #e5e7eb;
+  border-radius: 5%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

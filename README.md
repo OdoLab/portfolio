@@ -2,6 +2,6 @@
 My portfolio
 
 ### Live Demo
-https://github.com/OdoLab/portfolio.git
+https://OdoLab.github.io/documentation/
 
 ## Version : v0.1

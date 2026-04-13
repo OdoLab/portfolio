@@ -13,12 +13,17 @@ h1, h2, h3, h4 {
   font-family: $font-heading;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-body;
 }
 
 nav {
     position: fixed;
+    z-index: 100000000;
     height: 11vh;
     width: 100%;
 
@@ -31,6 +36,7 @@ nav {
     .navTitle {
       display: flex;
       align-items: center;
+      justify-self: start;
       padding-left: 1rem;
       gap: 1rem;
       height: 11vh;

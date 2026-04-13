@@ -10,12 +10,17 @@ h1, h2, h3, h4 {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
 
 nav {
   position: fixed;
+  z-index: 100000000;
   height: 11vh;
   width: 100%;
   background-color: var(--bg);
@@ -26,6 +31,7 @@ nav {
 nav .navTitle {
   display: flex;
   align-items: center;
+  justify-self: start;
   padding-left: 1rem;
   gap: 1rem;
   height: 11vh;
@@ -71,15 +77,27 @@ p {
     --text2: rgb(105, 105, 100);
   }
 }
-#about {
+#home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding-left: 20%;
 }
-#about h2 {
+#home h2 {
   color: #8a8a8a;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20vh 0;
+  gap: 5vh;
+}
+#about > p {
+  width: 60%;
+  text-align: left;
 }
 
 #project {
@@ -102,7 +120,7 @@ p {
   gap: 2.6%;
   width: 100%;
 }
-#project article {
+#project .cards article {
   display: flex;
   flex-direction: column;
   width: 25%;
@@ -110,25 +128,26 @@ p {
   background-color: var(--bg);
   border: 0.1rem solid var(--text2);
   border-radius: 5%;
+  transition: transform 0.5s;
 }
-#project article img {
+#project .cards article img {
   width: 80%;
   margin: 8%;
   margin-bottom: 5%;
   border-radius: 5%;
   align-self: center;
 }
-#project article h3 {
+#project .cards article h3 {
   margin-left: 9%;
 }
-#project article p {
+#project .cards article p {
   margin-top: 0.5rem;
   width: 80%;
   text-align: left;
   margin-left: 9%;
   flex: 1;
 }
-#project article .tags {
+#project .cards article .tags {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -138,7 +157,7 @@ p {
   width: 80%;
   margin: 1.5rem 9%;
 }
-#project article .tags span {
+#project .cards article .tags span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -150,7 +169,7 @@ p {
   border-radius: 5%;
   font-size: small;
 }
-#project article .more {
+#project .cards article .more {
   display: grid;
   grid-template-columns: 3fr 1fr;
   width: 80%;
@@ -158,7 +177,7 @@ p {
   margin-bottom: 8%;
   height: 2.25rem;
 }
-#project article .more button {
+#project .cards article .more button {
   background: transparent;
   border: none;
   padding: 0;
@@ -169,7 +188,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-#project article .more a {
+#project .cards article .more a {
   color: rgb(192, 132, 252);
   text-decoration: none;
   background-color: rgba(168, 85, 247, 0.2);
@@ -180,4 +199,219 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+#project .cards article:hover {
+  transform: scale(1.1);
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20vh 0;
+}
+#skills > p {
+  width: 60%;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
+#skills .skill-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  flex: 1;
+  margin-top: 5vh;
+}
+#skills .skill-bar article {
+  width: 25vw;
+  height: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#skills .skill-bar article img {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  place-self: center;
+}
+#skills .skill-bar article div {
+  align-self: center;
+  width: 100%;
+}
+#skills .skill-bar article div div {
+  margin-bottom: 0.3rem;
+}
+#skills .skill-bar article div div .skill-name {
+  font-weight: bold;
+}
+#skills .skill-bar article div div .skill-level {
+  float: right;
+}
+#skills .skill-bar article div .bar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--text2);
+  border-radius: 1rem;
+}
+#skills .skill-bar article div .bar .fill {
+  height: 100%;
+  background-color: rgb(192, 132, 252);
+  border-radius: 1rem;
+}
+
+#skills:not(.visible) .fill {
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+#skills.visible .bar .fill {
+  width: var(--target);
+  transition: width 3s ease;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20vh 0;
+}
+#education > p {
+  width: 60%;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
+#education article {
+  width: 60%;
+  height: 18vw;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 7.5fr;
+  border: 0.1rem solid rgb(102, 0, 133);
+  border-radius: 1rem;
+  margin: 0 10%;
+  margin-bottom: 5vh;
+}
+#education article .edu-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-right: 0.1rem solid rgb(102, 0, 133);
+  background-color: rgba(97, 12, 153, 0.233);
+}
+#education article .edu-left img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  border: 0.1rem solid black;
+  margin-bottom: 0.5rem;
+}
+#education article .edu-right {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(90, 2, 141, 0.068);
+}
+#education article .edu-right .edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#education article .edu-right .edu-header .edu-year {
+  height: 1.8rem;
+  padding: 0 0.5rem;
+  margin: 0;
+  float: right;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(102, 0, 133);
+  background-color: rgba(97, 12, 153, 0.233);
+  color: rgb(66, 0, 128);
+  align-content: center;
+  font-size: x-small;
+  font-weight: bold;
+}
+#education article .edu-right h3 {
+  margin: 0.4rem 0;
+  font-weight: 600;
+  font-size: 30;
+  color: rgb(66, 0, 128);
+}
+#education article .edu-right .line {
+  height: 0.1rem;
+  width: 70%;
+  background-color: rgb(102, 0, 133);
+}
+#education article .edu-right p {
+  margin-top: 0.5rem;
+  color: rgb(80, 80, 80);
+}
+#education article .edu-right .edu-button {
+  height: 10%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: auto;
+  align-self: flex-end;
+  gap: 1.5rem;
+}
+#education article .edu-right .edu-button .edu-diploma {
+  height: 180%;
+  padding: 0 0.7rem;
+  align-content: center;
+  font-size: medium;
+  font-weight: 550;
+  border-radius: 0.2rem;
+  border: 0.1rem solid rgb(102, 0, 133);
+  background-color: rgba(90, 2, 141, 0.075);
+}
+#education article .edu-right .edu-button .edu-website {
+  height: 180%;
+  padding: 0 0.7rem;
+  font-size: medium;
+  font-weight: 550;
+  color: rgb(66, 0, 128);
+  border: none;
+  background: none;
+  align-content: center;
+  text-decoration: none;
+}
+
+#certification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20vh 0;
+}
+#certification > p {
+  width: 60%;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: translate(50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translate(50%, -50%) scale(1.4);
+  }
+}
+#about:not(.visible) .timeline .today {
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+#about.visible .timeline .today {
+  width: calc((var(--date) - 2021) / 7 * 100%);
+  transition: width 3s ease;
 }/*# sourceMappingURL=main.css.map */

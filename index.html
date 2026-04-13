@@ -9,24 +9,38 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@300..700&display=swap" rel="stylesheet">
 
         <link href="css/main.css" rel="stylesheet">
+
+        <script src="js/transitions.js" defer></script>
     </head>
 
     <body>
         <nav>
-            <div class="navTitle">
+            <a href="#home" class="navTitle">
                 <img src="images/logo.odolab.png">
                 <h1>Portfolio</h1>
-            </div>
+            </a>
             <a href="#about">About</a>
             <a href="#project">Project</a>
             <a href="#skills">Skills</a>
-            <a href="#qualifications">Qualifications</a>
+            <a href="#education">Qualifications</a>
             <a href="#contact">Contact</a>
         </nav>
         <main>
-            <section id="about">
+            <section id="home">
                 <h1>Debuly Audo Ethan</h1>
                 <h2>Highschool Student driven by Robotics</h2>
+            </section>
+            <section id="about">
+                <h1>About Me</h1>
+                <p>
+                    Hi, I'm Ethan, 16, from Rennes, France (more like Breizh! 𝍎𝌆)</br>
+                    I've loved robotics and programming since I was very young. I'm currently in BFI (French International Section) at Victor et Hélène Basch High School, following Computer Science and Math specializations.</br>
+                    </br>
+                    Alongside school, I work on personal projects in HTML/CSS, Python, C, C++, MATLAB, and Arduino.</br>
+                    The goal of this channel is to showcase my projects, document my progress, and keep a record of my current advancements.</br>
+                    </br>
+                    For the future, I plan to continue my studies in Korea.</br>
+                </p>
             </section>
             <section id="project">
                 <h1>Featured Projects</h1>
@@ -38,21 +52,177 @@
                     <article>
                         <img src="images/documentation.png">
                         <h3>Ōdo-Lab Documentation</h3>
-                        <p>Wikipedia-style documentation site built from scratch.</p>
+                        <p>
+                            Wikipedia-style documentation site built from A to Z, to practice front-end programming.
+                            Contains an important part of my auto-formation courses
+                        </p>
                         <div class="tags">
                             <span>HTML</span>
                             <span>CSS</span>
-                            <span>SCSS</span>
+                            <span>JS</span>
                         </div>
                         <div class="more">
                             <button>View Details</button>
-                            <a href="https://github.com/..." target="_blank">GitHub</a>
+                            <a href="https://github.com/OdoLab/documentation" target="_blank">GitHub</a>
                         </div>
                     </article>
                 </div>
             </section>
-            <section id="skills"></section>
-            <section id="qualifications"></section>
+            <section id="skills">
+                <h1>Skills & Competences</h1>
+                <p>
+                    Interactive visualization of my technical skills, experience levels, and project involvement.
+                    Click on any category to explore detailed proficiency levels.
+                </p>
+                <div class="skill-bar">
+                    <article id="English">
+                        <img src="images/english.png">
+                        <div>
+                            <div>
+                                <span class="skill-name">English</span>
+                                <span class="skill-level">B2+</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="--target: 70%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="French">
+                        <img src="images/french.png">
+                        <div>
+                            <div>
+                                <span class="skill-name">French</span>
+                                <span class="skill-level">Native Speaker</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="--target: 100%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="Spanish">
+                        <img src="images/spanish.png">
+                        <div>
+                            <div>
+                                <span class="skill-name">Spanish</span>
+                                <span class="skill-level">A2+</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="--target: 30%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="Korean">
+                        <img src="images/korean.png">
+                        <div>
+                            <div>
+                                <span class="skill-name">Korean</span>
+                                <span class="skill-level">A1</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="--target: 10%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="HTML">
+                        <img src="images/logo.html.png">
+                        <div>
+                            <div>
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="--target: 70%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="CSS">
+                        <img src="images/logo.css.png">
+                        <div>
+                            <div>
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="--target: 60%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="JavaScript">
+                        <img src="images/logo.js.png">
+                        <div>
+                            <div>
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="--target: 40%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="Python">
+                        <img src="images/logo.python.png">
+                        <div>
+                            <div>
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Elementary</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="--target: 20%"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="education">
+                <h1>Education</h1>
+                <p>Here are all the diploma I've got since middleschool.</p>
+                <article id="middleschool">
+                    <div class="edu-left">
+                        <img src="images/ho.PNG" alt="logo ho">
+                        <span>HO</span>
+                    </div>
+                    <div class="edu-right">
+                        <div class="edu-header">
+                            <h2>Collège Les Hautes Ourmes, Rennes</h2>
+                            <span class="edu-year">2021-2025</span>
+                        </div>
+                        <h3>Diplome National du Brevet (DNB)</h3>
+                        <div class="line"></div>
+                        <p>
+                            French national lower-secondary diploma obtained at the end of middle school, validating
+                            core academic fundamentals across sciences, humanities and mathematics.
+                        </p>
+                        <div class="edu-button">
+                            <a href="https://www.college-les-hautes-ourmes.ac-rennes.fr/" target="_blank" class="edu-website">Website</a>
+                            <button class="edu-diploma">View Diploma</button>
+                        </div>
+                    </div>
+                </article>
+                <article id="highschool">
+                    <div class="edu-left">
+                        <img src="images/vhb.PNG" alt="logo vhb">
+                        <span>VHB</span>
+                    </div>
+                    <div class="edu-right">
+                        <div class="edu-header">
+                            <h2>Lycéee Victor et Hélène Basch, Rennes</h2>
+                            <span class="edu-year">2025-2028</span>
+                        </div>
+                        <h3>French International Baccalauréat (BFI)</h3>
+                        <div class="line"></div>
+                        <p>
+                            French international baccalauréat track combining the national curriculum with
+                            reinforced language and international culture requirements, preparing for higher education abroad.
+                        </p>
+                        <div class="edu-button">
+                            <a href="https://lycee-basch.fr/" target="_blank" class="edu-website">Website</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="certification">
+                <h1>Certifications</h1>
+            </section>
             <section id="contact"></section>
         </main>
     </body>

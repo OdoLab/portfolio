@@ -11,6 +11,7 @@
         <link href="css/main.css" rel="stylesheet">
 
         <script src="js/transitions.js" defer></script>
+        <script src="js/ui.js" defer></script>
     </head>
 
     <body>
@@ -21,37 +22,109 @@
             </a>
             <a href="#about">About</a>
             <a href="#project">Project</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Qualifications</a>
+            <div>
+                <span id="competences">Competences</span>
+                <div class="menu">
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experiences</a>
+                </div>
+            </div>
+            <div>
+                <span id="competences">Qualifications</span>
+                <div class="menu">
+                    <a href="#education">Education</a>
+                    <a href="#certification">Certification</a>
+                </div>
+            </div>
             <a href="#contact">Contact</a>
         </nav>
         <main>
             <section id="home">
                 <h1>Debuly Audo Ethan</h1>
                 <h2>Highschool Student driven by Robotics</h2>
+                <article class="scrollBlur"">
+                    <h3>--&gt; Hello!</h3>
+                    <p>
+                        My name is Ethan, I'm 16 years old, and I'm a student at the Victor and Hélène Basch High School in Rennes.
+                        Deeply artistic yet scientific as well, I love creating, drawing, sketching, and seeing ideas come to life.
+                        I can be a perfectionist while remaining productive, whether on a small personal project or something much larger.
+                        Computer science has become a core part of who I am, a passion I've chosen to take seriously. My goal is clear: to
+                        one day join KAIST, one of the world's leading universities in robotics research, in South Korea.
+                    </p>
+                </article>
             </section>
             <section id="about">
-                <h1>About Me</h1>
-                <p>
-                    Hi, I'm Ethan, 16, from Rennes, France (more like Breizh! 𝍎𝌆)</br>
-                    I've loved robotics and programming since I was very young. I'm currently in BFI (French International Section) at Victor et Hélène Basch High School, following Computer Science and Math specializations.</br>
-                    </br>
-                    Alongside school, I work on personal projects in HTML/CSS, Python, C, C++, MATLAB, and Arduino.</br>
-                    The goal of this channel is to showcase my projects, document my progress, and keep a record of my current advancements.</br>
-                    </br>
-                    For the future, I plan to continue my studies in Korea.</br>
-                </p>
+                <article class="float-left">
+                    <h1 class="scrollPopLeft">Driven by Passion</h1>
+                    <p>
+                        Since I was 10 years old, the idea of one day programming real websites, games or robots have fascinated me as 
+                        something far beyond a hobby. I decided to make it a core part of my life, I started learning computer 
+                        science on my own a couple of years ago, through books, personal projects, and a structured
+                        self-teaching path I built myself over time and through failures. <strong>I learnt how to learn</strong>. 
+                        No classroom, no teacher. Just curiosity and determination.
+                    </p>
+                </article>
+                <article class="float-right">
+                    <h1 class="scrollPopRight">Robotics, More Than a Choice</h1>
+                    <p>
+                        Robotics is not just about walking machines, it's for me a way to materialize computer science in the real world. 
+                        It's <strong>giving life</strong> to something from nothing. It is also one of the most promising fields of our time: robots could take 
+                        over the jobs nobody wants, reduce the human cost of wars, assist our elderly, or perform surgeries with superhuman 
+                        precision. But beyond all of that, robotics is simply where my two worlds, <strong>art and science</strong>, collide without any limits. 
+                        Building a robot means designing it, engineering it, and programming it. That's everything I am.
+                    </p>
+                </article>
+                <article class="float-left">
+                    <h1 class="scrollPopLeft">Beyond the Screen</h1>
+                    <p>
+                        I'm also just a teenager from a normal family. Between school and self-teaching, I like to hike or bike in the nearby
+                        countryside, or take some time to draw, but whatever I do, it's always with music on! I'm quite extroverted, some people could
+                        tend to call me a loner, but I love spending time with others, it can be friends, or loved ones, online or in real life. 
+                        What drives me the most is what I could become and what I can achieve. Above all, I want to be proud of myself, I want a "thank you" 
+                        from the future me, to live without regrets. That's why I'm taking every opportunity I can to reach the highest point I can.
+                    </p>
+                </article>
+                <article class="float-right">
+                    <h1 class="scrollPopRight">Korea and KAIST : a long-thought goal</h1>
+                    <p>
+                        For years, I've wanted to become an international student. It started online, through a close-knit international community
+                        where I discovered English, and just how vast the world really is. Later, I applied for the very selective international section
+                        of my region and got in, my first real step toward that path. When it came to choosing a country, the US and UK quickly gave their
+                        way to East Asia : better scholarships, stronger universities in robotics, and serious government investment in the field. Korea
+                        stood out, the language, the writing system, the culture all drew me in. I'm currently learning Korean, aiming for TOPIK 3/4 by 2028.
+                        Among Korean universities, SNU, KAIST and UNIST are my targets. But KAIST is the most specialized in robotics research,
+                        and therefore the most aligned with where I want to go.
+                    </p>
+                </article>
             </section>
             <section id="project">
                 <h1>Featured Projects</h1>
-                <p>
-                    A showcase of my technical projects, demonstrating full-stack development, problem-solving skills,
-                    and attention to user experience.
+                <p class="scrollBlur">
+                    As I'm organising my auto-formation into terms, I like to bring up in each term a project or a remaster of a previous project. Yet unless
+                    practicing the raw new knowledge with discipline via exercises or over-simplified projects (eg., "to-do list"), I've decided that grouping
+                    that doing it under the form of a full functional big project is way more practical, efficientcool and beyond all : fun. Here you can find
+                    everything about my projects, don't hesitate to skip their provided details and directly test how functional they are.
                 </p>
-                <div class="cards">
+                <div class="cards scrollBlur">
+                    <article>
+                        <img src="images/portfolio.png">
+                        <h2>Portfolio</h2>
+                        <p>
+                            Handmade Portfolio to showcase me, my projects and my skills.
+                        </p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <div class="more">
+                            <button onclick="openUI(this, 'UI-project')">View Details</button>
+                            <a href="https://github.com/OdoLab/portfolio" target="_blank">GitHub</a>
+                        </div>
+                    </article>
                     <article>
                         <img src="images/documentation.png">
-                        <h3>Ōdo-Lab Documentation</h3>
+                        <h2>Ōdo-Lab Documentation</h2>
                         <p>
                             Wikipedia-style documentation site built from A to Z, to practice front-end programming.
                             Contains an important part of my auto-formation courses
@@ -62,19 +135,20 @@
                             <span>JS</span>
                         </div>
                         <div class="more">
-                            <button>View Details</button>
+                            <button onclick="openUI(this, 'UI-project')">View Details</button>
                             <a href="https://github.com/OdoLab/documentation" target="_blank">GitHub</a>
                         </div>
                     </article>
                 </div>
             </section>
             <section id="skills">
-                <h1>Skills & Competences</h1>
+                <h1>Skills</h1>
                 <p>
-                    Interactive visualization of my technical skills, experience levels, and project involvement.
-                    Click on any category to explore detailed proficiency levels.
+                    In this section, I thought that displaying my linguistic and computer-sciences-related skills would be the best showcase. Find Here
+                    my actual level in Korean, but also in Python or CSS. To calculate these, I've been using CEFR criteria mixed/adapted with global and commonly
+                    found certifications required competences. I tried to be the most objective possible. Interpret them as estimation, not as official ranking!!
                 </p>
-                <div class="skill-bar">
+                <div class="skill-bar scrollBlur">
                     <article id="English">
                         <img src="images/english.png">
                         <div>
@@ -175,29 +249,11 @@
             </section>
             <section id="education">
                 <h1>Education</h1>
-                <p>Here are all the diploma I've got since middleschool.</p>
-                <article id="middleschool">
-                    <div class="edu-left">
-                        <img src="images/ho.PNG" alt="logo ho">
-                        <span>HO</span>
-                    </div>
-                    <div class="edu-right">
-                        <div class="edu-header">
-                            <h2>Collège Les Hautes Ourmes, Rennes</h2>
-                            <span class="edu-year">2021-2025</span>
-                        </div>
-                        <h3>Diplome National du Brevet (DNB)</h3>
-                        <div class="line"></div>
-                        <p>
-                            French national lower-secondary diploma obtained at the end of middle school, validating
-                            core academic fundamentals across sciences, humanities and mathematics.
-                        </p>
-                        <div class="edu-button">
-                            <a href="https://www.college-les-hautes-ourmes.ac-rennes.fr/" target="_blank" class="edu-website">Website</a>
-                            <button class="edu-diploma">View Diploma</button>
-                        </div>
-                    </div>
-                </article>
+                <p>
+                    Here is displayed the totality of all my past curriculums (including the active ones) followed by the associated diploma and the school's official website.
+                    Do not hesitate to make your own advice on each diploma, if implying to make researchs on the web or to contact the related
+                    educational establishment.
+                </p>
                 <article id="highschool">
                     <div class="edu-left">
                         <img src="images/vhb.PNG" alt="logo vhb">
@@ -219,11 +275,119 @@
                         </div>
                     </div>
                 </article>
+                <article id="middleschool">
+                    <div class="edu-left">
+                        <img src="images/ho.PNG" alt="logo ho">
+                        <span>HO</span>
+                    </div>
+                    <div class="edu-right">
+                        <div class="edu-header">
+                            <h2>Collège Les Hautes Ourmes, Rennes</h2>
+                            <span class="edu-year">2021-2025</span>
+                        </div>
+                        <h3>Diplome National du Brevet (DNB)</h3>
+                        <div class="line"></div>
+                        <p>
+                            French national lower-secondary diploma obtained at the end of middle school, validating
+                            core academic fundamentals across sciences, humanities and mathematics.
+                        </p>
+                        <div class="edu-button">
+                            <a href="https://www.college-les-hautes-ourmes.ac-rennes.fr/" target="_blank" class="edu-website">Website</a>
+                            <button class="edu-diploma" onclick="openUI(this, 'UI-diploma')">View Diploma</button>
+                        </div>
+                    </div>
+                </article>
             </section>
             <section id="certification">
                 <h1>Certifications</h1>
+                <p>
+                    Here is displayed the majority of the certifications I've ever passed. They can be nationally recognised to unrecognised at all. Be free again to make
+                    your own opinion on each. I assure that I've been passing ALL OF THEM with serious and deep implication, seeking for knowledge acquirement over their "promised"
+                    recognition. Any certification there directly reflects my motivation and attempts to achieve the excelence in domains such as computer sciences or plurilinguism.
+                </p>
+                <div class="cert scrollBlur">
+                    <article>
+                        <div class="cert-top">
+                            <img src="images/certifications/junior-developer.png">
+                        </div>
+                        <div class="cert-bottom">
+                            <h2>Apprenti Développeur</h2>
+                            <h3>TRALALERE, Amazon Future Engineer</h3>
+                            <div>
+                                <span>2025</span>
+                                <button onclick="openUI(this, 'UI-cert')">View Certificate</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="cert-top">
+                            <img src="images/certifications/aba.png">
+                        </div>
+                        <div class="cert-bottom">
+                            <h2>Intermediate (B1)</h2>
+                            <h3>American & British Academy</h3>
+                            <div>
+                                <span>2025</span>
+                                <button onclick="openUI(this, 'UI-cert')">View Certificate</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="cert-top">
+                            <img src="images/certifications/pix.png">
+                        </div>
+                        <div class="cert-bottom">
+                            <h2>Certification PIX</h2>
+                            <h3>French Ministry of National Education</h3>
+                            <div>
+                                <span>2026</span>
+                                <button onclick="openUI(this, 'UI-cert')">View Certificate</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </section>
-            <section id="contact"></section>
         </main>
+        <footer id="contact"></footer>
+
+        <div id="UI-cert" class="ui-window">
+            <div class="top-bar">
+                <span class="top-bar-name"></span>
+                <div class="top-bar-actions">
+                    <button class="action-one"></button>
+                    <button class="action-two"></button>
+                    <button class="action-three"></button>
+                </div>
+            </div>
+            <div class="main" class="ui-window">
+                <img src="">
+            </div>
+        </div>
+
+        <div id="UI-diploma" class="ui-window">
+            <div class="top-bar">
+                <span class="top-bar-name"></span>
+                <div class="top-bar-actions">
+                    <button class="action-one"></button>
+                    <button class="action-two"></button>
+                    <button class="action-three"></button>
+                </div>
+            </div>
+            <div class="main">
+            </div>
+        </div>
+
+        <div id="UI-project" class="ui-window">
+            <div class="top-bar">
+                <span class="top-bar-name"></span>
+                <div class="top-bar-actions">
+                    <button class="action-one"></button>
+                    <button class="action-two"></button>
+                    <button class="action-three"></button>
+                </div>
+            </div>
+            <div class="main">
+            </div>
+        </div>
     </body>
 </html>

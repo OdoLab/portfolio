@@ -15,45 +15,11 @@ h1, h2, h3, h4 {
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 body {
   font-family: $font-body;
-}
-
-nav {
-    position: fixed;
-    z-index: 100000000;
-    height: 11vh;
-    width: 100%;
-
-    background-color: var(--bg);
-    border-bottom: 0.1rem solid var(--text2);
-    
-    display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr 1.5fr 1fr;
-
-    .navTitle {
-      display: flex;
-      align-items: center;
-      justify-self: start;
-      padding-left: 1rem;
-      gap: 1rem;
-      height: 11vh;
-
-      img {
-        height: 90%;
-      }
-    }
-
-    a {
-    place-self: center;
-    
-    text-decoration: none;
-    color: var(--text);
-    font-size: large;
-    font-weight: bold;
-    }
 }
 
 main {
@@ -64,10 +30,10 @@ section {
     scroll-margin-top: 11vh;
     width: 100%;
     min-height: 89vh;
-    background-color: var(--bg);
     color: var(--text);
+    padding: 10vh 0;
 
-    border-bottom: 0.1rem solid var(--text2);
+    /*border-bottom: 0.1rem solid var(--text2);*/
 }
 
 p {

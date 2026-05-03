@@ -1,0 +1,56 @@
+// Scroll Animation
+.scrollBlur {
+    animation: scrollBlurAnimation linear both;
+    animation-timeline: view();
+}
+
+@keyframes scrollBlurAnimation {
+    0%{
+        filter: blur(40px);
+        opacity: 0;
+    }
+    20%, 70%{
+        filter: blur(0);
+        opacity: 1;
+    }
+    100%{
+        filter: blur(40px);
+        opacity: 0;
+    }
+}
+
+.scrollPopLeft {
+    animation: scrollPopLeftAnimation both;
+    animation-timeline: view();
+}
+
+@keyframes scrollPopLeftAnimation {
+    from{
+        filter: blur(10px);
+        transform: translateX(-1000px);
+        opacity: 0.2;
+    }
+    50%{
+        filter: blur(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.scrollPopRight {
+    animation: scrollPopRightAnimation both;
+    animation-timeline: view();
+}
+
+@keyframes scrollPopRightAnimation {
+    from{
+        filter: blur(10px);
+        transform: translateX(1000px);
+        opacity: 0.2;
+    }
+    50%{
+        filter: blur(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

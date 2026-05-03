@@ -1,3 +1,4 @@
+/*Repeat transition each time they appear*/
 function handleEntries(entries) {
   for (var i = 0; i < entries.length; i++) {
     if (entries[i].isIntersecting) {

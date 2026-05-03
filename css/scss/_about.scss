@@ -1,12 +1,35 @@
 #about {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20vh 0;
-  gap: 5vh; // 👈 handles spacing between children uniformly
+  flex: 1;
 
-  & > p {
+  article {
     width: 60%;
-    text-align: left;
+    margin: 0 10%;
+    margin-bottom: 15vh;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      text-align: justify;
+      font-size: large;
+      font-weight: bold;
+      color: #8a8a8a;
+
+      strong {
+        color: var(--text2);
+        font-size: x-large;
+      }
+    }
+  }
+
+  .float-left {
+    align-self: flex-start;
+  }
+
+  .float-right {
+    align-self: flex-end;
   }
 }

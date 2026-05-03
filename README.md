@@ -4,6 +4,6 @@ My own portfolio built from A to Z thanks to my auto-courses and experience on m
 IMPORTANT : This portfolio is not yet fully personalised artistically speaking. My Artistic Direction isn't part of this project yet but should come in the upcomming versions (v0.6 or 7). Do not hesitate to give me feedbacks either on github directly or on any other contact method given in this portfolio!
 
 ### Live Demo
-<a href="https://OdoLab.github.io/portfolio/" target="_blank">https://OdoLab.github.io/portfolio/</a>
+https://OdoLab.github.io/portfolio/
 
 ## Version : v0.3
